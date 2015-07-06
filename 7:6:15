@@ -11,3 +11,16 @@ Schemas/Migration
 Json
 Helpers
 Partials
+
+
+Sinatra: Very similarly deployed in many instances.
+
+Controllers: initialize lots of variables using active record
+
+Once you have variables initialized in your route, you can access them in your view.  Will use lots of active record while setting up routes.
+
+<% and <%= embedded ruby, how you write ruby within html to get stuff that you want visualized.
+
+= sign means that you're actually printing something to the page.
+
+Architecture behidn sinatra is all mvc based.  The wayyour controllers talk to your views is through erb.
