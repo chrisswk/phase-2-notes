@@ -24,3 +24,20 @@ Once you have variables initialized in your route, you can access them in your v
 = sign means that you're actually printing something to the page.
 
 Architecture behidn sinatra is all mvc based.  The wayyour controllers talk to your views is through erb.
+
+BK: uses the marvel comics API.  Can see what comics heros appeared in and which ones they appeared in together.
+
+Lots of active record, heros are objects, comics are objects.  you can click through a lot of stuff, it is fun.
+
+Seed file: creates fake user accounts.  Found a data dump of the Marvel comics api.  Limited to 100 comics an hour but there are so many that BK needed a dump
+
+JSON: JavaScript Object Notation.  Can access a JSON object like an array.
+
+RESTful routes.  The idea is that You have these objects and if you wanted to create an api, it is good practice.
+
+Staunton:
+Shows us what is possible after week 2.  For his passion project, he built a site for his Mom's yoga business.
+
+JQuery fade-in, callback function.  Activates the next part of the function.
+
+Only loading the div, not reloading his web pages.  Staunton has a controller for each route.  Creates a different controller for each one.
