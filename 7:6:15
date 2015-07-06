@@ -55,4 +55,12 @@ Eric Saxman: Bcrypt
 
 include BCrypt
 
-You'll have getter and setter methods.  When you make a user in your data base, you give your user the field password_hash.  BCrypt will hold an encoded password for you.  When you come to a sign up page and you put in your password, password = will say password.create your provided password.  That will encode into a long string.  BCrypt password is stored as a code in the data base.  When you log in, you call password.new.  self.password_hash.  Memoizing: essentially making a new password object out of this.  Nothing is ever decoded from the database.  == is redefined by the BCrypt gem and asks if a submitted password is encoded will it be equal to the stored password_hash.
+You'll have getter and setter methods.  When you make a user in your data base, you give your user the field password_hash.  BCrypt will hold an encoded password for you.  When you come to a sign up page and you put in your password, password = will say password.create your provided password.  That will encode into a long string.  BCrypt password is stored as a code in the data base.  When you log in, you call password.new.  self.password_hash.  Memoizing: essentially making a new password object out of this.  Nothing is ever decoded from the database.  == is redefined by the BCrypt gem and asks if a submitted password is encoded will it be equal to the stored password_hash.  The start of the stored string representing the encoded password is the salt.  It is easy to think Bcrypt could be hacked.
+
+If you can find a way to understand this, there is very little you have to memorize.
+
+Validations: Brcypt, validates, password presence true, the password will always push something through.
+
+Karan, JQuery
+
+Jquery is a javascript library that manipulates the DOM.  If we go to socrates.devbootcamp.com, what you will get used to is opening up your chrome dev tools.  In Chrome dev tools you have a console and can view all your commands.  $('img').fadeOut  IN javascript to execute any function you have to use parentheses.  FadeIn, fadeOut()  Command line shell for SQLite3.
