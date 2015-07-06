@@ -41,3 +41,18 @@ Shows us what is possible after week 2.  For his passion project, he built a sit
 JQuery fade-in, callback function.  Activates the next part of the function.
 
 Only loading the div, not reloading his web pages.  Staunton has a controller for each route.  Creates a different controller for each one.
+
+Is using AJAX to interrupt the routing still RESTful?  Ajax just prevents the entire page from reloading.
+
+Alex Kusack: Gems and Oauth.  Can go to the gem then edit it!!!  Can specify which repository.
+
+You need to reset your server.
+Arielle Chen
+Portal: Marketplace specifically for parents where they can post old toys to exchange with other parents.  Can sign in using facebook or make an account herself.  Categories using ajax calls.  Page doesn't reload, just loads content.  
+
+
+Eric Saxman: Bcrypt
+
+include BCrypt
+
+You'll have getter and setter methods.  When you make a user in your data base, you give your user the field password_hash.  BCrypt will hold an encoded password for you.  When you come to a sign up page and you put in your password, password = will say password.create your provided password.  That will encode into a long string.  BCrypt password is stored as a code in the data base.  When you log in, you call password.new.  self.password_hash.  Memoizing: essentially making a new password object out of this.  Nothing is ever decoded from the database.  == is redefined by the BCrypt gem and asks if a submitted password is encoded will it be equal to the stored password_hash.
