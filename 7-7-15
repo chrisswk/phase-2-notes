@@ -15,3 +15,28 @@ Important part to understand is that request body is important when we're postin
 Body: chunk of data not in your parameters.
 
 Can we only send a hash?  Sinatra has a clever way of addressing this problem.  Only text data we are sending in.  Sinatra can parse slightly different things to make them look like an array or a hash.
+
+We talked about get and post which is the create and read part of HTTP/RESTful routes.  These are all just HTTP methods for different actions.  POST usually expects a body that can be used to make changes to data or create new data on the server.  UPDATE 
+
+In the routing guide in rails there is a great table.  Examples of different tables
+
+# /cheers?id=3
+Route: :wildcard will take the symbol and make it into a key in the params
+
+Derek will live code another application with that functionality.
+
+Why is it essential to use post?  Sending data in to the server.  The example of this challenge is sort of simplified for a reason.
+
+Bundle exec will run your programs in the context of what we're actually using.  If we have a couple different versions of shotgun it could pick the wrong one if we run the command without bundle exec.
+
+Not sure exactly what version it picks, probably whatever we find first in our pth.  Thats the one it uses.  Bundle exec will limit to only the ones listed in our gem file.  So confused.
+
+We want to iterate through all the articles in this table and list them line by line.
+
+We've got the list of articles displayed.  Lets create a form and be able to create an article as well.
+
+<form action='/articles' method='POST'>
+
+MDN: Actually amazing.  Types of forms.  Hidden is used quite a bit.  There is even a type password.
+
+Paperclip
