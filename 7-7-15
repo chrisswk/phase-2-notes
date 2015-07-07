@@ -1,0 +1,3 @@
+submits a form wwhich hits a post, relevant to the cheering mascot sinatra challenge.
+
+We redirect using query parameters or a query string.  We can't set up an instance variable and have it carry through to different actions.  Every time we start a new action it resets all the variables.
