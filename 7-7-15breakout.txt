@@ -1,0 +1,4 @@
+bundle
+rake -T
+rake generate:migration NAME=create_categories
+rake generate:migration NAME=create_articles
