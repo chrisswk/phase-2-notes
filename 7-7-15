@@ -1,3 +1,17 @@
 submits a form wwhich hits a post, relevant to the cheering mascot sinatra challenge.
 
 We redirect using query parameters or a query string.  We can't set up an instance variable and have it carry through to different actions.  Every time we start a new action it resets all the variables.
+
+Cookies: Hacky way of getting around the statelessness of HTTP.  How is data getting into a post?
+
+"#{sign_text}&#{further_interpolation}" passing additional query strings.  Query parameters are limited to the browser.  Usually limited to 2000 character.
+
+If you're doing data and just using post requests.  Only way is to put the requests in the query string(?).  GET does not contain a body.  POST and PUT do.
+
+What is a body?  When we built the http server yesterday we built it to read until it saw a blank line.  In this 
+
+Important part to understand is that request body is important when we're posting or updating things so that we can have more data.
+
+Body: chunk of data not in your parameters.
+
+Can we only send a hash?  Sinatra has a clever way of addressing this problem.  Only text data we are sending in.  Sinatra can parse slightly different things to make them look like an array or a hash.
