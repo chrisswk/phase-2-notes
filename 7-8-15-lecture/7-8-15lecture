@@ -1,0 +1,27 @@
+Test Driven Development
+
+Why do we even want to test?
+  *  Makes it easier to change code
+  *  "If you don't have tests, you're not refactoring." - you change something in a way where you have the same functionality as before and its more legible.
+  *  Documentation
+  *  Manage scope and building to specifications.  Build small things that are easy to reason about)
+  *  Helps you know what to code
+  *  To prevent regression; reversion to a previous bug, breaking this as you work on them
+  *  Design is improved(theoretically?) - relatively obvious that design helps with coupling.
+
+Why do we want to test first?
+  *  Helps you trim the fat of what you don't need.  Helps you do the simplest thing that could possibly work
+  *  Its difficult to find a place to start.(All I want to do is make this test green)
+  *  Make your teachers proud.
+  *  You'll actually write tests.  Decent reason to test first
+  *  To make sure you don't forget to implement a feature.
+  *  Dictates the way that you're going to design your program.  
+  *  Improves design to test first, even
+  *  Streamlines your coding process
+
+Controller tests!
+  *  Spec helper tells us which database to use.  An environment variable is an environment stored in your shell
+
+  3 steps: given, when and then
+
+  Rack-test gem has some examples and documentation, not amazing.  You can also do Sinatra rspec.  Screencast series by the pragmatic programmers, Kent Beck, who does test driven development in front of the screen.
