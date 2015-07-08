@@ -2,3 +2,29 @@ bundle
 rake -T
 rake generate:migration NAME=create_categories
 rake generate:migration NAME=create_articles
+rake generate:model NAME=Category
+rake generate:model NAME=Article
+
+#open in sublime, see what it looks like
+#specify properties in migration
+#specify relationships in the models
+
+rake db:create
+rake db:migrate
+
+rake db:console
+Article.all
+Category.all
+
+We populate using the seed file so that we don't need to run anything more than once.  So see seed file
+
+Cate.articles
+If we want to find the category for which an article belongs, find an article with the category of one, then article.category
+
+ps ax | grep shotgun
+kill -9 shotgun
+
+If spec_helper file is included then everything is automatically included.
+
+Set up the routes before the view.
+
