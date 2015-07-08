@@ -1,0 +1,66 @@
+Active Record
+RESTful routes
+JQuery
+AJAX
+ERB
+Object Oriented Javascript
+User authenication/bcrypt
+Sinatra
+Oauth
+Schemas/Migration
+Json
+Helpers
+Partials
+
+
+Sinatra: Very similarly deployed in many instances.
+
+Controllers: initialize lots of variables using active record
+
+Once you have variables initialized in your route, you can access them in your view.  Will use lots of active record while setting up routes.
+
+<% and <%= embedded ruby, how you write ruby within html to get stuff that you want visualized.
+
+= sign means that you're actually printing something to the page.
+
+Architecture behidn sinatra is all mvc based.  The wayyour controllers talk to your views is through erb.
+
+BK: uses the marvel comics API.  Can see what comics heros appeared in and which ones they appeared in together.
+
+Lots of active record, heros are objects, comics are objects.  you can click through a lot of stuff, it is fun.
+
+Seed file: creates fake user accounts.  Found a data dump of the Marvel comics api.  Limited to 100 comics an hour but there are so many that BK needed a dump
+
+JSON: JavaScript Object Notation.  Can access a JSON object like an array.
+
+RESTful routes.  The idea is that You have these objects and if you wanted to create an api, it is good practice.
+
+Staunton:
+Shows us what is possible after week 2.  For his passion project, he built a site for his Mom's yoga business.
+
+JQuery fade-in, callback function.  Activates the next part of the function.
+
+Only loading the div, not reloading his web pages.  Staunton has a controller for each route.  Creates a different controller for each one.
+
+Is using AJAX to interrupt the routing still RESTful?  Ajax just prevents the entire page from reloading.
+
+Alex Kusack: Gems and Oauth.  Can go to the gem then edit it!!!  Can specify which repository.
+
+You need to reset your server.
+Arielle Chen
+Portal: Marketplace specifically for parents where they can post old toys to exchange with other parents.  Can sign in using facebook or make an account herself.  Categories using ajax calls.  Page doesn't reload, just loads content.  
+
+
+Eric Saxman: Bcrypt
+
+include BCrypt
+
+You'll have getter and setter methods.  When you make a user in your data base, you give your user the field password_hash.  BCrypt will hold an encoded password for you.  When you come to a sign up page and you put in your password, password = will say password.create your provided password.  That will encode into a long string.  BCrypt password is stored as a code in the data base.  When you log in, you call password.new.  self.password_hash.  Memoizing: essentially making a new password object out of this.  Nothing is ever decoded from the database.  == is redefined by the BCrypt gem and asks if a submitted password is encoded will it be equal to the stored password_hash.  The start of the stored string representing the encoded password is the salt.  It is easy to think Bcrypt could be hacked.
+
+If you can find a way to understand this, there is very little you have to memorize.
+
+Validations: Brcypt, validates, password presence true, the password will always push something through.
+
+Karan, JQuery
+
+Jquery is a javascript library that manipulates the DOM.  If we go to socrates.devbootcamp.com, what you will get used to is opening up your chrome dev tools.  In Chrome dev tools you have a console and can view all your commands.  $('img').fadeOut  IN javascript to execute any function you have to use parentheses.  FadeIn, fadeOut()  Command line shell for SQLite3.
