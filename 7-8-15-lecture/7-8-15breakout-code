@@ -1,0 +1,16 @@
+get '/' do
+  @games  = Game.all
+  erb :index
+end
+
+post '/games/:id' do
+  p session[:favorite] # the terminal will just print out 
+  @game = Game.find(params[:id])
+  erb :"games/show"
+end
+
+
+post '/favorites' do
+  cookies[:favorite] = params[:id] #was the thing Derek sent in.
+end
+

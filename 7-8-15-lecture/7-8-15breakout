@@ -1,0 +1,35 @@
+Lecture
+
+
+Cookies
+===================
+20 Videogames Considered the Best of All Time
+
+We can click on these and they'll open up.  We can click on a button to mark our favorite game.  We can store this information as a cookie.
+
+Params get reset every time, otherwise we'd have to save everything in the query string, use something that is stored somewhere.  We can store it in the database.  How do you trace this stuff?
+
+We put a little file that your browser stores every time you get an information request.  Sinatra or this particular rack application encryts the cookie for you so we cannot examine it.
+
+Session specific cookies are probably only one cookie.  We'll see in a second what other information might be stored. Cookies are stored for hosts, subdomain, protocols like http and https.
+
+Https encrypts your transmission at the browser level and sends your communication through the browser level, wires, air and decrypts it on that side.  Firesheep: Just looked at traffic going past on the network.
+
+The way that http fakes being stateful is by sending something every time it makes a request without you telling it to.  Hacky as shit.  Takes an extra thing onto http so it can fake having state.  So Monday, when we built a server it did not send any cookies because we did not tell it to.  Http cookies have a limit of 4093 bytes.
+
+Look into rack session.  Documentation may be interesting.
+
+Button implies that the thing itself is just a form.  Wants to create a new faovrite so it makes sense to have a post.
+
+Sends a cookie with requests in the future.  What is session when you call it?
+
+Cookies are key value pairs so the browser can store it.  One of the things is a string and the other an integer.  Whats being passed back and forth is the sessions hash.  Is there a way to create your own cookie instead of using Sinatra?  It can be in plain text in Rails or JavaScript.s
+
+
+User Login
+=====================
+Usermodel
+
+Bcrypt: encryption algorithm, called bcrypt.  If you store in bcrypt can't you just pull it out and change it?  Can only bcrypt.  It is a 1 way algorithm, when it is doing comparisons between the stored and input password.  Encrypts everything the same way and compares the two.
+
+Derek created a user earlier.  Set steve.  Bcrypt redefines the == thing to do something slightly different.  Email should not convey plaintext passwords.  By including bcrypt 

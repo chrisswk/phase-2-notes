@@ -34,7 +34,7 @@ describe 'articles controller' do
   describe 'POST /articles' do
     it 'creates a new article' do
       #given
-      count = Article.count
+      #count = Article.count
       #when
       expect {
         post "/articles", title: "The newest article"

@@ -25,3 +25,6 @@ Controller tests!
   3 steps: given, when and then
 
   Rack-test gem has some examples and documentation, not amazing.  You can also do Sinatra rspec.  Screencast series by the pragmatic programmers, Kent Beck, who does test driven development in front of the screen.
+
+  be rspec spec/index_controller_spec.rb:23
+  visit syntax vs get.  Visit uses capybara so it actually tests everything using a broswer.

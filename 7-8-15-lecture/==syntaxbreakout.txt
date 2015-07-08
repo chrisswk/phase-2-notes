@@ -1,0 +1,7 @@
+    # Compares a potential secret against the hash. Returns true if the secret is the original secret, false otherwise.
+
+    
+    def ==(secret)
+      super(BCrypt::Engine.hash_secret(secret, @salt))
+    end
+    alias_method :is_password?, :==
