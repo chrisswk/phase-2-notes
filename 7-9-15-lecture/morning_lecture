@@ -52,3 +52,11 @@ How?
     This might be obvious to everyone else at this point.  Aaron, Marshall and Tim on a team.  Three separate features.  Just picked three.  Aaron finished a feature.  He would push it up.  Pull early and often.  Lets say an hour passes and another pushes, must pull again before someone pushes.
 
     Must also send a pull request so that the person who forked it must also review a pull request.  Won't let you click the green button until you can merge correctly.  So we should be merging or the pulls won't do anything.
+
+    Derek: different defense contractor, built a feature before he left a giant corporation.  It took him a few months.  His boss, after he left, merged stuff using subversion and the branches in subversion would clone the entire thing.  Boss waited until Derek left to do it.  Recommends respecting your teammates enough to let them pull things in.  If the person you hired to write code can't code, then why did you hire them?
+
+    When you pull before you push, do you merge it locally?  Yes!
+
+    Marshall: What the fuck is a partial?  Can that be a good way of avoiding merge conflicts?  Avoids having massive files.  That helps avoid everyone editing everything at the same time.
+
+    Bikram: Sprints.  Are they usually two weeks?  Whatever you want.  More like a check point of what you're doing, ideally all the things you want to do will get done when the sprint is over.
