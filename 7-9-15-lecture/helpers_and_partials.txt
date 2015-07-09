@@ -1,0 +1,70 @@
+Today we'll be talking about helpers and partials.
+
+All Shambhavi is talkiing about is refactoring.  Refactoring your HTML.  Wherever you find repetitive HTML code, group it into an erb file and call the ERB.  Group a particular task into a partial and call it over and over again.
+
+Helpers: Whenever there is a repetitive ruby thing, group that into a separate method and call that method in all your classes.
+
+To start with, Shambhavi just made the craigslist junior challenge.  Lets test the code and the app.
+
+We see the route page.  Options: sign in and sign up.
+
+Signin: Username: field Password: field Sign In: button
+
+On signup, automatically takes user to list of categories.  Can create new cateogries, gets appended.  Can create and read categories and articles.  Logout, takes her to the signin page
+
+What is repetitive?  The create form, the logout button.
+
+Session helper: blank as of now.  models: article, cateogry and user model, which has bcrypt + user authentication.
+
+_article.erb  Ideally rails uses _article to make sure something is a partial.  In order to indicate that it is a partial
+
+How does _article.erb understand what is article.
+
+<%= erb:_article, locals:{article: article} %>
+
+The article local variable is nothing more than 
+
+So, what else?  We can do the same thing for the categories?  The list of categories   _category.erb
+
+Can pretty much take this code and paste it into another partial.  So lets check it out before we do anything.  Let shamsham log out.  Sign in again.  
+
+We were thinkin baout refactoring the form.
+
+We can refactor the form.  Put it inside _form.erb.  The action is different.  
+
+If Shambhavi's partial is inside a form folder: locals: {action: " " } and take the previous form action.  Now it is a string interpolation.
+
+What is the convention for navigation?  Should it be in a separate layout file or in navigation?
+
+With routes in partials, nothing changes.
+
+All about partials.  What about helpers?  It makes it easier to have 2 columns when you're working with two files.
+
+Talking about helpers, why do we need them?  They're nice for readability.  Help to check to see if someone is logged in?  Why not put that logic into a separate method and call it to see if the test is performed or not?
+
+Moving on to the helpers, let SHambhavi get back to her controller.  She has a get route called sign up.  When she is signing up, she has two password. Checks to see if they are corrrectly formatted.  could she just log the user in?
+
+Same way in logout, she can make her code more readable by typing in a method name from the helper folder.
+
+Start with:
+  
+helpers do
+  def login_user(user)
+    session[:user_id] = user.id
+  end
+
+  def logout_user
+    session[:user_id] = nil
+  end
+
+  def set_error(error)
+    -> logic
+  end
+
+end
+
+
+
+Helpers are only accessible inside the view and the controller, 
+
+Could redirects happen anywhere other than in the helper method?  No.  Only in the controller.
