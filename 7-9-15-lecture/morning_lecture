@@ -5,3 +5,43 @@ Able to move quickly and easily, method of project management characterized by d
 Let's talk about manufacturing.  Raw materials?  Not necessary.  Original concepts of manufacturing software were based on physical manufacturing.  Ridiculous.
 
 Waterfall development process is the strawman as the opposition to agile except no one has ever used it.  Requirements(Product requirements document) >>  Design(Software architecture) >>  Implementation(Software)  >>  Verification  >>  Maintenance.  How could you possibly design the entire thing berfore you start working on it?  You can't because there are a lot of unknowns.  Back to the manufacturing process because then we needed "raw materials".  Waterfall was described in the paper from 1974 as a process.  The original software projects from the 50s and 60s used this.
+
+A bunch of dudes and a couple of women got into a room and figured out what they would rather focus on with software projects rather than what was happening.  The things on the right were things they kept doing with big corporations and the things on the left are things they'd rather do and found more effective.
+
+We are uncovering better ways of developing
+software by doing it and helping others do it.
+Through this work we have come to value:
+
+Individuals and interactions                            over processes and tools
+Working software                                        over comprehensive documentation
+Customer collaboration                                  over contract negotiation
+Responding to change                                    over following a plan
+
+That is, while there is value in the items on
+the right, we value the items on the left more.
+
+Sharif had 10,000 pages of documentation on a government project before they started.  Wanted something less process heavy that they could actually rely on.
+
+How?  
+
+  Speed up the cycle.  Flight information display systems.  Gave them requirements, said see you in six months.  Derek's team wanted to work with his customers rather than have a deadline, ask them how something looked and tweak things with more frequent releases.  Becomes a little bit more expensive to fix things.  "Software bugs are more expensive to fix at the end but not as expensive as previously stated."
+
+  Development cycles are often called "sprints".
+
+  Communicate, talk to the customer and talk to your team
+
+  Standups, communicate within the team.
+
+  Retrospectives: at the end of a release, usually not at the end of every sprint talk about what worked and didn't work.  We'll have a retrospective tomorrow as a team and as a cohort.  Literally the same as when Derek worked at Sony.  Worked on a project, X-Factor, 18000+ requests per second, did smiley faces on the baord.
+
+  How do we do this right now?
+
+    Kanban boards!  To do, doing, done.  Literally post-it notes.  To do, doing and done.  If you're doing something, move it over.  They usually describe a feature of some sort.  One of the reasons it works is because it is so simple.  The colors can mean something but don't have to.  Color coding is a process thing, doesn't want to include too much process.  Walt mentioned JIRA.  Can measure the velocity of the team.  JIRA has all this shit added on, added on process but is supposed to be easily manipulatable and easily changeable.
+
+    Where can we find a stack of post it notes?
+
+    Looking at the Kanban board, different people are doing different features.  So, how should we divide up work?
+
+    Someone could work on the actual tweet model, someone could work on the controller, someone could work on the front end.
+
+    Horizontal slices aren't great; don't divide up work between segregated interfaces.  So how should we actually divide up work.  Same graphic, instead we work on something like this.  One dude works on a feature that does all three things while completing one feature.  Don't have to ask someone can you write me a model to do this.  Same with other team members.
