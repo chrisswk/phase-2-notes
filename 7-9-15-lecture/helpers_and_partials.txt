@@ -68,3 +68,23 @@ end
 Helpers are only accessible inside the view and the controller, 
 
 Could redirects happen anywhere other than in the helper method?  No.  Only in the controller.
+
+Shambhavi can replace this and say
+
+get '/' do
+  if current_user
+end
+
+def current_user
+  User.find_by_id(session[:user_id])
+end
+
+Could you theoretically wrap every helper method and put them all in one helper file?  Yeah, theoretically.
+
+How do you call a helper file within an erb or controller?
+
+Not sure how to use a layout, knows its defined using yield.  another thing that can be defined in the erb file is layout.  Default is true.  Whatever is done is being inserted within this particular body.  In this case if Shambhavi says, returning to the categories.erb file or articles.  If she says layout: false in the erb <%=  %>.  Layouts only used with partials.
+
+How does all this tie in to the concept of layout?  Layout false means that Shambhavi just wants her partial to be appended to the currently rendered body.
+
+The erb method is also used in the routes.  Definitely want the layout in the routes.  So it is true by default.  layout is always included unless you tell it not to be included.
