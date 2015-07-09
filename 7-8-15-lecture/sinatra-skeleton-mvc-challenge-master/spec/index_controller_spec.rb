@@ -9,7 +9,7 @@ describe 'articles controller' do
         #that this world exists
       #can probably skip the given here because we know this is a server environment
       #when
-        #making a GET request to the /articles route
+        #making a GET request to the /articles routedkdkdkd
         get '/articles'
         #we do this thing
       #then

@@ -1,0 +1,7 @@
+Agile
+
+Able to move quickly and easily, method of project management characterized by division of tasks into short phases of work and frequent reassessment and adaptaion of plans.
+
+Let's talk about manufacturing.  Raw materials?  Not necessary.  Original concepts of manufacturing software were based on physical manufacturing.  Ridiculous.
+
+Waterfall development process is the strawman as the opposition to agile except no one has ever used it.  Requirements(Product requirements document) >>  Design(Software architecture) >>  Implementation(Software)  >>  Verification  >>  Maintenance.  How could you possibly design the entire thing berfore you start working on it?  You can't because there are a lot of unknowns.  Back to the manufacturing process because then we needed "raw materials".  Waterfall was described in the paper from 1974 as a process.  The original software projects from the 50s and 60s used this.

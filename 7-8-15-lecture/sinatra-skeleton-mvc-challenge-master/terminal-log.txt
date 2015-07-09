@@ -1,0 +1,669 @@
+Loading ~/.bash_profile a shell script that runs in every new terminal you open
+Logged in as chriswkramlich at chriswkramlichs-MacBook-Pro.local
+~ :> cd Documents
+Documents :> ls
+Extracurricular  phase-1          phase-2-notes
+Textbooks        phase-1-guide    phase-2-projects
+Documents :> cd phase-2-notes
+phase-2-notes [master] :> subl .
+phase-2-notes [master] :> ls
+7-6-15             7-7-15breakout     README.md
+7-6-15-lecture     7-8-15-lecture     server.rb
+7-7-15             LICENSE            topics_for_phase_2
+phase-2-notes [master] :> cd 7-8-15-lecture/
+7-8-15-lecture [master] :> ls
+7-8-15lecture                         untitled
+sinatra-skeleton-mvc-challenge-master
+7-8-15-lecture [master] :> cd sinatra-skeleton-mvc-challenge-master/
+RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+you can ignore these warnings with 'rvm rvmrc warning ignore /Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/Gemfile'.
+To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+
+sinatra-skeleton-mvc-challenge-master [master] :> subl .
+sinatra-skeleton-mvc-challenge-master [master] :> ls
+CHANGELOG.md Gemfile.lock Rakefile     config       db           spec
+Gemfile      README.md    app          config.ru    public
+sinatra-skeleton-mvc-challenge-master [master] :> bundle
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.2
+Using minitest 5.5.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.2
+Using activesupport 4.2.0
+Using builder 3.2.2
+Using activemodel 4.2.0
+Using arel 6.0.0
+Using activerecord 4.2.0
+Using backports 3.6.4
+Using mime-types 2.4.3
+Using mini_portile 0.6.2
+Using nokogiri 1.6.6.2
+Using rack 1.6.0
+Using rack-test 0.6.3
+Using xpath 2.0.0
+Using capybara 2.4.4
+Using diff-lcs 1.2.5
+Using factory_girl 4.5.0
+Using faker 1.4.3
+Using multi_json 1.10.1
+Using pg 0.18.1
+Using rack-protection 1.5.3
+Using rspec-support 3.2.0
+Using rspec-core 3.2.0
+Using rspec-expectations 3.2.0
+Using rspec-mocks 3.2.0
+Using rspec 3.2.0
+Using shotgun 0.9
+Using shoulda-matchers 2.8.0
+Using tilt 1.4.1
+Using sinatra 1.4.5
+Using sinatra-contrib 1.4.2
+Using bundler 1.10.5
+Bundle complete! 13 Gemfile dependencies, 36 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+sinatra-skeleton-mvc-challenge-master [master] :> be rake rspec
+rake aborted!
+Don't know how to build task 'rspec'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+(See full trace by running task with --trace)
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1226:in `load': /Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/spec/index_controller_spec.rb:19: syntax error, unexpected end-of-input, expecting keyword_end (SyntaxError)
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1226:in `block in load_spec_files'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1224:in `each'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1224:in `load_spec_files'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:97:in `setup'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:85:in `run'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/exe/rspec:4:in `<top (required)>'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/rspec:23:in `load'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/rspec:23:in `<main>'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec
+
+articles controller
+  GET /articles
+    responds with a successful status (FAILED - 1)
+
+Failures:
+
+  1) articles controller GET /articles responds with a successful status
+     Failure/Error: expect(last_response.status).to eq(200)
+
+       expected: 200
+            got: 404
+
+       (compared using ==)
+     # ./spec/index_controller_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+Finished in 0.0111 seconds (files took 0.645 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/index_controller_spec.rb:5 # articles controller GET /articles responds with a successful status
+
+sinatra-skeleton-mvc-challenge-master [master] :> touch app/controllers/index.rb
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec
+
+articles controller
+  GET /articles
+    responds with a successful status (FAILED - 1)
+  GET /articles/:id
+    responds with a successful status (FAILED - 2)
+
+Failures:
+
+  1) articles controller GET /articles responds with a successful status
+     Failure/Error: expect(last_response.status).to eq(200)
+
+       expected: 200
+            got: 404
+
+       (compared using ==)
+     # ./spec/index_controller_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  2) articles controller GET /articles/:id responds with a successful status
+     Failure/Error: article = Article.create(title: "My Article")
+     NameError:
+       uninitialized constant Article
+     # ./spec/index_controller_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+Finished in 0.00827 seconds (files took 0.50808 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/index_controller_spec.rb:5 # articles controller GET /articles responds with a successful status
+rspec ./spec/index_controller_spec.rb:22 # articles controller GET /articles/:id responds with a successful status
+
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller/spec.rb:23
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1226:in `load': cannot load such file -- /Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/spec/index_controller/spec.rb (LoadError)
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1226:in `block in load_spec_files'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1224:in `each'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1224:in `load_spec_files'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:97:in `setup'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:85:in `run'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/rspec-core-3.2.0/exe/rspec:4:in `<top (required)>'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/rspec:23:in `load'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/rspec:23:in `<main>'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+  from /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller_spec.rb:23
+Run options: include {:locations=>{"./spec/index_controller_spec.rb"=>[23]}}
+
+articles controller
+  GET /articles/:id
+    responds with a successful status (FAILED - 1)
+
+Failures:
+
+  1) articles controller GET /articles/:id responds with a successful status
+     Failure/Error: article = Article.create(title: "My Article")
+     NameError:
+       uninitialized constant Article
+     # ./spec/index_controller_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+Finished in 0.00066 seconds (files took 0.50901 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/index_controller_spec.rb:22 # articles controller GET /articles/:id responds with a successful status
+
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller_spec.rb:23
+Run options: include {:locations=>{"./spec/index_controller_spec.rb"=>[23]}}
+
+articles controller
+  GET /articles/:id
+    responds with a successful status (FAILED - 1)
+
+Failures:
+
+  1) articles controller GET /articles/:id responds with a successful status
+     Failure/Error: article = Article.create(title: "My Article")
+     ActiveRecord::StatementInvalid:
+       PG::UndefinedTable: ERROR:  relation "articles" does not exist
+       LINE 5:                WHERE a.attrelid = '"articles"'::regclass
+                                                 ^
+       :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                            pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                       FROM pg_attribute a LEFT JOIN pg_attrdef d
+                         ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                      WHERE a.attrelid = '"articles"'::regclass
+                        AND a.attnum > 0 AND NOT a.attisdropped
+                      ORDER BY a.attnum
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `async_exec'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `block in exec_no_cache'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `block in log'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activesupport-4.2.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract_adapter.rb:460:in `log'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `exec_no_cache'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:584:in `execute_and_clear'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql/database_statements.rb:160:in `exec_query'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:733:in `column_definitions'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql/schema_statements.rb:186:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/schema_cache.rb:43:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:91:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:96:in `columns_hash'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:54:in `new'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/persistence.rb:33:in `create'
+     # ./spec/index_controller_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.11988 seconds (files took 0.4966 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/index_controller_spec.rb:24 # articles controller GET /articles/:id responds with a successful status
+
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller_spec.rb:23
+Run options: include {:locations=>{"./spec/index_controller_spec.rb"=>[23]}}
+
+articles controller
+  GET /articles/:id
+    responds with a successful status (FAILED - 1)
+
+Failures:
+
+  1) articles controller GET /articles/:id responds with a successful status
+
+MKDIR(1)                  BSD General Commands Manual                 MKDIR(1)
+
+NAME
+     mkdir -- make directories
+
+SYNOPSIS
+     mkdir [-pv] [-m mode] directory_name ...
+
+DESCRIPTION
+     The mkdir utility creates the directories named as operands, in the order specified, using mode rwxrwxrwx (0777) as modified by the current umask(2).
+
+     The options are as follows:
+
+     -m mode
+             Set the file permission bits of the final created directory to the specified mode.  The mode argument can be in any of the formats specified to the chmod(1) command.  If
+             a symbolic mode is specified, the operation characters ``+'' and ``-'' are interpreted relative to an initial mode of ``a=rwx''.
+
+     -p      Create intermediate directories as required.  If this option is not specified, the full path prefix of each operand must already exist.  On the other hand, with this
+             option specified, no error will be reported if a directory given as an operand already exists.  Intermediate directories are created with permission bits of rwxrwxrwx
+             (0777) as modified by the current umask, plus write and search permission for the owner.
+
+     -v      Be verbose when creating directories, listing them as they are created.
+
+     The user must have write permission in the parent directory.
+
+DIAGNOSTICS
+     The mkdir utility exits 0 on success, and >0 if an error occurs.
+
+SEE ALSO
+     rmdir(1)
+
+COMPATIBILITY
+     The -v option is non-standard and its use in scripts is not recommended.
+
+STANDARDS
+     The mkdir utility is expected to be IEEE Std 1003.2 (``POSIX.2'') compatible.
+
+HISTORY
+     A mkdir command appeared in Version 1 AT&T UNIX.
+
+BSD                            January 25, 1994                            BSD
+...skipping...
+
+MKDIR(1)                  BSD General Commands Manual                 MKDIR(1)
+
+NAME
+     mkdir -- make directories
+
+SYNOPSIS
+     Failure/Error: article = Article.create(title: "My Article")
+     ActiveRecord::StatementInvalid:
+       PG::UndefinedTable: ERROR:  relation "articles" does not exist
+       LINE 5:                WHERE a.attrelid = '"articles"'::regclass
+                                                 ^
+       :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                            pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                       FROM pg_attribute a LEFT JOIN pg_attrdef d
+                         ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                      WHERE a.attrelid = '"articles"'::regclass
+                        AND a.attnum > 0 AND NOT a.attisdropped
+                      ORDER BY a.attnum
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `async_exec'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `block in exec_no_cache'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `block in log'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activesupport-4.2.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract_adapter.rb:460:in `log'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `exec_no_cache'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:584:in `execute_and_clear'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql/database_statements.rb:160:in `exec_query'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:733:in `column_definitions'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql/schema_statements.rb:186:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/schema_cache.rb:43:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:91:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:96:in `columns_hash'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:54:in `new'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/persistence.rb:33:in `create'
+     # ./spec/index_controller_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.02351 seconds (files took 0.48932 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/index_controller_spec.rb:24 # articles controller GET /articles/:id responds with a successful status
+
+sinatra-skeleton-mvc-challenge-master [master] :> rake db:create
+Creating development and test databases if they don't exist...
+createdb: database creation failed: ERROR:  database "sinatra-skeleton-mvc-challenge-master_development" already exists
+sinatra-skeleton-mvc-challenge-master [master] :> rake db:drop
+Dropping development and test databases...
+sinatra-skeleton-mvc-challenge-master [master] :> mkdir -p
+usage: mkdir [-pv] [-m mode] directory ...
+sinatra-skeleton-mvc-challenge-master [master] :> mkdir --help
+mkdir: illegal option -- -
+usage: mkdir [-pv] [-m mode] directory ...
+sinatra-skeleton-mvc-challenge-master [master] :> man mkdir
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller_spec.rb:23
+Run options: include {:locations=>{"./spec/index_controller_spec.rb"=>[23]}}
+
+articles controller
+  GET /articles/:id
+    responds with a successful status (FAILED - 1)
+
+Failures:
+
+  1) articles controller GET /articles/:id responds with a successful status
+     Failure/Error: article = Article.create(title: "My Article")
+     ActiveRecord::NoDatabaseError:
+       FATAL:  database "sinatra-skeleton-mvc-challenge-master_test" does not exist
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_handling.rb:87:in `connection'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:91:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:96:in `columns_hash'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:54:in `new'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/persistence.rb:33:in `create'
+     # ./spec/index_controller_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.01444 seconds (files took 0.49623 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/index_controller_spec.rb:24 # articles controller GET /articles/:id responds with a successful status
+
+sinatra-skeleton-mvc-challenge-master [master] :> ls
+CHANGELOG.md Gemfile      Gemfile.lock README.md    Rakefile     app          config       config.ru    db           public       spec
+sinatra-skeleton-mvc-challenge-master [master] :> cd db
+db [master] :> ls
+migrate  seeds.rb
+db [master] :> cd ..
+sinatra-skeleton-mvc-challenge-master [master] :> be rake generate:migration
+rake aborted!
+Must specificy migration name, e.g., rake generate:migration NAME=create_tasks
+/Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/Rakefile:36:in `block (2 levels) in <top (required)>'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => generate:migration
+(See full trace by running task with --trace)
+sinatra-skeleton-mvc-challenge-master [master] :> be rake generate:migration NAME=create_articles
+Creating /Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/db/migrate/20150708094230_create_articles.rb
+sinatra-skeleton-mvc-challenge-master [master] :> be rake db:migrate
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  database "sinatra-skeleton-mvc-challenge-master_development" does not exist
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:913:in `initialize'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:820:in `new'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:820:in `up'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:798:in `migrate'
+/Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/Rakefile:106:in `block (2 levels) in <top (required)>'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+PG::ConnectionBad: FATAL:  database "sinatra-skeleton-mvc-challenge-master_development" does not exist
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:913:in `initialize'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:820:in `new'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:820:in `up'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:798:in `migrate'
+/Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/Rakefile:106:in `block (2 levels) in <top (required)>'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+sinatra-skeleton-mvc-challenge-master [master] :> be rake db:create
+Creating development and test databases if they don't exist...
+sinatra-skeleton-mvc-challenge-master [master] :> be rake db:migrate
+D, [2015-07-08T09:43:31.175292 #34687] DEBUG -- :    (23.0ms)  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL)
+D, [2015-07-08T09:43:31.180106 #34687] DEBUG -- :    (1.9ms)  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+D, [2015-07-08T09:43:31.182604 #34687] DEBUG -- :   ActiveRecord::SchemaMigration Load (0.5ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+I, [2015-07-08T09:43:31.186281 #34687]  INFO -- : Migrating to CreateArticles (20150708094230)
+rake aborted!
+SyntaxError: /Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/db/migrate/20150708094230_create_articles.rb:6: syntax error, unexpected end-of-input, expecting keyword_end
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:774:in `load_migration'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:770:in `migration'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:765:in `disable_ddl_transaction'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:1048:in `use_transaction?'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:1040:in `ddl_transaction'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:994:in `execute_migration_in_transaction'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:956:in `block in migrate'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:952:in `each'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:952:in `migrate'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:820:in `up'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/migration.rb:798:in `migrate'
+/Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/Rakefile:106:in `block (2 levels) in <top (required)>'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/chriswkramlich/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+sinatra-skeleton-mvc-challenge-master [master] :> be rake db:migrate
+D, [2015-07-08T09:43:37.963312 #34695] DEBUG -- :   ActiveRecord::SchemaMigration Load (0.3ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+I, [2015-07-08T09:43:37.965570 #34695]  INFO -- : Migrating to CreateArticles (20150708094230)
+D, [2015-07-08T09:43:37.966082 #34695] DEBUG -- :    (0.2ms)  BEGIN
+== 20150708094230 CreateArticles: migrating ===================================
+-- create_table(:articles)
+D, [2015-07-08T09:43:37.970376 #34695] DEBUG -- :    (3.5ms)  CREATE TABLE "articles" ("id" serial primary key, "title" character varying)
+   -> 0.0042s
+== 20150708094230 CreateArticles: migrated (0.0043s) ==========================
+
+D, [2015-07-08T09:43:37.977599 #34695] DEBUG -- :   SQL (0.3ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150708094230"]]
+D, [2015-07-08T09:43:37.984196 #34695] DEBUG -- :    (6.4ms)  COMMIT
+sinatra-skeleton-mvc-challenge-master [master] :> cd ..
+7-8-15-lecture [master] :> ls
+7-8-15lecture                         sinatra-skeleton-mvc-challenge-master untitled
+7-8-15-lecture [master] :> cd sinatra-skeleton-mvc-challenge-master/
+RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+you can ignore these warnings with 'rvm rvmrc warning ignore /Users/chriswkramlich/Documents/phase-2-notes/7-8-15-lecture/sinatra-skeleton-mvc-challenge-master/Gemfile'.
+To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller_spec.rb:23
+Run options: include {:locations=>{"./spec/index_controller_spec.rb"=>[23]}}
+
+articles controller
+  GET /articles/:id
+    responds with a successful status (FAILED - 1)
+
+Failures:
+
+  1) articles controller GET /articles/:id responds with a successful status
+     Failure/Error: article = Article.create(title: "My Article")
+     ActiveRecord::StatementInvalid:
+       PG::UndefinedTable: ERROR:  relation "articles" does not exist
+       LINE 5:                WHERE a.attrelid = '"articles"'::regclass
+                                                 ^
+       :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                            pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                       FROM pg_attribute a LEFT JOIN pg_attrdef d
+                         ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                      WHERE a.attrelid = '"articles"'::regclass
+                        AND a.attnum > 0 AND NOT a.attisdropped
+                      ORDER BY a.attnum
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `async_exec'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `block in exec_no_cache'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `block in log'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activesupport-4.2.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract_adapter.rb:460:in `log'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `exec_no_cache'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:584:in `execute_and_clear'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql/database_statements.rb:160:in `exec_query'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:733:in `column_definitions'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql/schema_statements.rb:186:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/schema_cache.rb:43:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:91:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:96:in `columns_hash'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:54:in `new'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/persistence.rb:33:in `create'
+     # ./spec/index_controller_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.02473 seconds (files took 0.49799 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/index_controller_spec.rb:24 # articles controller GET /articles/:id responds with a successful status
+
+sinatra-skeleton-mvc-challenge-master [master] :> be rake console
+cannot load such file -- awesome_print
+2.1.0 :001 > Article.all
+D, [2015-07-08T09:44:59.214860 #34800] DEBUG -- :   Article Load (0.4ms)  SELECT "articles".* FROM "articles"
+ => #<ActiveRecord::Relation []>
+2.1.0 :002 > Article.create(title: "My Article")
+D, [2015-07-08T09:45:10.742939 #34800] DEBUG -- :    (0.1ms)  BEGIN
+D, [2015-07-08T09:45:10.746714 #34800] DEBUG -- :   SQL (0.3ms)  INSERT INTO "articles" ("title") VALUES ($1) RETURNING "id"  [["title", "My Article"]]
+D, [2015-07-08T09:45:10.749158 #34800] DEBUG -- :    (2.2ms)  COMMIT
+ => #<Article id: 1, title: "My Article">
+2.1.0 :003 > \q
+2.1.0 :004 > .q
+SyntaxError: (irb):3: syntax error, unexpected $undefined
+  from /Users/chriswkramlich/.rvm/rubies/ruby-2.1.0/bin/irb:11:in `<main>'
+2.1.0 :005 > \q
+2.1.0 :006 > ^C
+2.1.0 :006 > ^C
+2.1.0 :006 > ^C
+2.1.0 :006 > ^C
+2.1.0 :006 > ^C
+2.1.0 :006 >
+[1]+  Stopped                 bundle exec rake console
+sinatra-skeleton-mvc-challenge-master [master] :> ps
+  PID TTY           TIME CMD
+33939 ttys000    0:00.28 -/bin/bash
+34800 ttys000    0:01.16 irb
+sinatra-skeleton-mvc-challenge-master [master] :> kill irb
+bash: kill: irb: arguments must be process or job IDs
+sinatra-skeleton-mvc-challenge-master [master] :> kill 34800
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller_spec.rb:23
+Run options: include {:locations=>{"./spec/index_controller_spec.rb"=>[23]}}
+
+articles controller
+  GET /articles/:id
+    responds with a successful status (FAILED - 1)
+
+Failures:
+
+  1) articles controller GET /articles/:id responds with a successful status
+     Failure/Error: article = Article.create(title: "My Article")
+     ActiveRecord::StatementInvalid:
+       PG::UndefinedTable: ERROR:  relation "articles" does not exist
+       LINE 5:                WHERE a.attrelid = '"articles"'::regclass
+                                                 ^
+       :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                            pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                       FROM pg_attribute a LEFT JOIN pg_attrdef d
+                         ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                      WHERE a.attrelid = '"articles"'::regclass
+                        AND a.attnum > 0 AND NOT a.attisdropped
+                      ORDER BY a.attnum
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `async_exec'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `block in exec_no_cache'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `block in log'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activesupport-4.2.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/abstract_adapter.rb:460:in `log'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:592:in `exec_no_cache'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:584:in `execute_and_clear'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql/database_statements.rb:160:in `exec_query'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:733:in `column_definitions'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/postgresql/schema_statements.rb:186:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/connection_adapters/schema_cache.rb:43:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:91:in `columns'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/attributes.rb:96:in `columns_hash'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/inheritance.rb:54:in `new'
+     # /Users/chriswkramlich/.rvm/gems/ruby-2.1.0/gems/activerecord-4.2.0/lib/active_record/persistence.rb:33:in `create'
+     # ./spec/index_controller_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.02451 seconds (files took 0.50366 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/index_controller_spec.rb:24 # articles controller GET /articles/:id responds with a successful status
+
+sinatra-skeleton-mvc-challenge-master [master] :> rake -T
+rake console             # Start IRB with application environment loaded
+rake db:create           # Create the databases at sinatra-skeleton-mvc-challenge-master_development
+rake db:drop             # Drop the database at sinatra-skeleton-mvc-challenge-master_development
+rake db:migrate          # Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)
+rake db:reset            # Drop, create, and migrate the database
+rake db:rollback         # rollback your migration--use STEP=number to step back multiple times
+rake db:seed             # Populate the database with dummy data by running db/seeds.rb
+rake db:test:prepare     # Migrate test database
+rake db:version          # Returns the current schema version number
+rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
+rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
+rake generate:spec       # Create an empty model spec in spec, e.g., rake generate:spec NAME=user
+rake spec                # Run RSpec code examples
+sinatra-skeleton-mvc-challenge-master [master] :> rake db:test:prepare
+== 20150708094230 CreateArticles: migrating ===================================
+-- create_table(:articles)
+   -> 0.0031s
+== 20150708094230 CreateArticles: migrated (0.0032s) ==========================
+
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller_spec.rb:23
+Run options: include {:locations=>{"./spec/index_controller_spec.rb"=>[23]}}
+
+articles controller
+  GET /articles/:id
+    responds with a successful status
+
+Finished in 0.04124 seconds (files took 0.51573 seconds to load)
+1 example, 0 failures
+
+sinatra-skeleton-mvc-challenge-master [master] :> git push origin master
+Username for 'https://github.com': chrisswk
+Password for 'https://chrisswk@github.com':
+To https://github.com/chrisswk/phase-2-notes
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/chrisswk/phase-2-notes'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+sinatra-skeleton-mvc-challenge-master [master] :> bake
+bash: bake: command not found
+sinatra-skeleton-mvc-challenge-master [master] :> be rspec spec/index_controller_spec.rb:23
+Run options: include {:locations=>{"./spec/index_controller_spec.rb"=>[23]}}
+
+articles controller
+  GET /articles/:id
+    responds with a successful status
+
+Finished in 0.04215 seconds (files took 0.49491 seconds to load)
+1 example, 0 failures
+
+sinatra-skeleton-mvc-challenge-master [master] :>
