@@ -45,3 +45,10 @@ How?
     Someone could work on the actual tweet model, someone could work on the controller, someone could work on the front end.
 
     Horizontal slices aren't great; don't divide up work between segregated interfaces.  So how should we actually divide up work.  Same graphic, instead we work on something like this.  One dude works on a feature that does all three things while completing one feature.  Don't have to ask someone can you write me a model to do this.  Same with other team members.
+
+    How do we avoid conflicts?
+    Horizontal was easy because you're working in different files but could all be in the same file.  Talk, git, push up and pull all the time.  If someone is working on something when their feature is done, push.  DOn't tell someone to push up when not done.  Should be pulling all the time to avoid merge conflicts.  Happens if you don't pull code down enough times.  Don't say, I'm working on this file, no one else touch it.  It might be it won't show up as often as you'd hope.  You could also have 7 different controller files: users controller, tweets controller.  Can still sort of do, with one person, all the features of related to one thing.
+
+    This might be obvious to everyone else at this point.  Aaron, Marshall and Tim on a team.  Three separate features.  Just picked three.  Aaron finished a feature.  He would push it up.  Pull early and often.  Lets say an hour passes and another pushes, must pull again before someone pushes.
+
+    Must also send a pull request so that the person who forked it must also review a pull request.  Won't let you click the green button until you can merge correctly.  So we should be merging or the pulls won't do anything.
