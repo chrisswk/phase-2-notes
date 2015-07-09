@@ -60,3 +60,5 @@ How?
     Marshall: What the fuck is a partial?  Can that be a good way of avoiding merge conflicts?  Avoids having massive files.  That helps avoid everyone editing everything at the same time.
 
     Bikram: Sprints.  Are they usually two weeks?  Whatever you want.  More like a check point of what you're doing, ideally all the things you want to do will get done when the sprint is over.
+
+    Derek: Timebox how long you spend thinking about something so that you actually build something.  Timebox how long you spent on requirements gathering.  Spend a little time figuring out what the schema looks like.  BFUD is bad but SFUD isn't necessarily bad.
