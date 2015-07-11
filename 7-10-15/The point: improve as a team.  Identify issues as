@@ -1,1 +1,130 @@
 The point: improve as a team.  Identify issues as a team: things that went well, things that didn't go well.  Also to figure out how to do this thing so you are somewhat good at them in the future.  Write post-it notes to document how much fun we had.  Derek understands the microwaves are terrible, not necessarily things that go on the wall but tare necessary feedback.  What didn't go well technically or the dynamics.  Or things that went well.  Or Shambhavi does really good code breakouts.
+
+Sticky notes
+
+:(  Bad side
+
+Horizontal division: only controller, view or model.  Try doing another future that includes the migrations.
+
+More team communication and planning, and cohesion when it comes to doing vertical slice distribution.
+
+Working in groups with people at different technical levels.  If you're at a more advanced level than that is your own fault, you need to stop and help other people understand.  Sometimes we get something or we don't.  You need to admit you don't understand something and if you're just not getting it and if they explain it, say I don't get it.  But do not allow people to move on if you do not get it.  We all can agree that we will not get mad or impatient with you.  I do struggle when the pace is not as fast as I would like it to be.  Its something that is frustrating sometimes when you're in this mission mindset.  I have found pairing with people who are better than me is stressful and not productive at all.  When I work with someone at a similar technical level as me and we figure things out together, that has been awesome.  Teachers in different locations have considered pairing people together who are at similar technical levels.  We sometimes learn off of each other.  I think also talking about this is good and we just have to take it upon ourselves whatever role to bridge the gap.  When we get a job we won't be working with people who are at our level.  Even if you are the most person in this cohort you will not be the most advanced person at a company.  Here, someone might go to a boss and say why did we hire this guy, woman or girl?  Most impressive people expose their ignorance as much as possible.  Derek has a hard time doing that because people wonder why did we hire this guy or he's an idiot?  The people who don't seem to have that problem or blast right through it.  Exposing ignorance is one sign of being pretty good at something and relatively confident because it would probably help you to do so.  You can communicate about what it is reather than just thinking oh you're better than me.  Everyone has strengths in different things.  For that reason we have code-a-long, during the non-core hours, make use of the coaches, take advantage of the coaches.  Their goal from yesterday morning was to make sure no one was left behind.  At the midnight hour, Tim was trying to push to Heroku really quick, help Aaron along.  It goes both ways to step back forward.  Reminding yourself of that goal instead of thinking that you'll get the challenge done.  As long as you're learning that stuff, because you're not going to look at the challenges that got done, they'll only care how much you learned.  its not waht you're going to lok at at all.  they'll look at what you're able to do  Everything we develop and code has a design aspect.  Design isn't about making something look pretty, its a collaborative soft scale.  Typically you'll work with a domain specific expert.  You have to work with that person like a pair and if they don't feel like their ideas are heard.  Probably the underlying thing that is happening in our cohort and there are some that are not all that time consuming.  One of the thoughts: sometimes I'm in a position where I think I do understand it better.  I learn technical skills in the lower skill set.  Would like to be a manager and can get frustrated.  If sit on hands, will be a better person on a longer term basis.  Everyone here is so fucking smart, really really smart.  No one got in by an accident.  If no one hasn't gotten something its because they haven't gotten the skill yet.  Thats how Andrea approaches it.  Just have a skill she doesn't know yet.  The skill of being able to explain things to people, you have a leg up on 90% of the people going in to a situation.
+
+Aaron thinks there is a pretty clear divide between people at the top and people at the top are pushing things and thats good but you can tell by whoe spoke almost, there are people who really understand what is going on and who are really pushing things.  There are a lot of us who are kind of silent in the way that they are not getting things as fast as they want to.  Been the dude that is pushing things with his hands on the keyboard and also the person who feels like they pretend to get it but don't get it.  We think our cohort is being driven by the people at the top and it should be driven by the people at the bottom.  Are you getting it or are you not because I know you are?  I think we know where we would generally put you in a category.  Sometimes Aaron is worried that all he brings to a group is his knowledge and ability to do things but also cheerfulness and snide remarks and when worrying about pairing, bring those traits too.  Even today, working with nick, working pretty well together, 
+
+Not enough standups
+
+Project did not deploy properly
+
+More collaborative time spent refactoring
+
+Slow down, we don't have deadlines and everyone learns at a different pace.  Make sure once you are done doing something to explain to others.
+
+Not everyone contributed or felt like they could contribute.
+
+
+
+Not enough time
+
+I went into this not understanding the material.  You still have to take control of your own learning, can we slow down, come up after this.  Derek doesn't mind going over stuff.
+
+Timebox :(
+
+Be okay with stepping away and reflecting often.
+
+Interrupting group members when they are deep in a heavy coding session.
+
+Communication broke down as the deadline approached.
+
+Metaplanning.  Meyers Briggs test, planning can be hard.  If half the group needs to see the big picture then the rest won't work.  Can discover about yourself in this relatively safe environment as opposed to the work place.  Aaron's group talked for a long time about a plan and didn't stick to it.  Could have used more advice about how they could have borken things down into how things worked.  Only so many features they put on the board that they accomplished.  Derek thinks that iterating things, I don't know what a feature or a story is.  If you build a massive class but until you actually do that do you realize.  Harvey thinks its great to fail a lot more than you succeed because if you succeed you don't really think about what worked or did not work.  jared would make things work a lot but also try to fuck up what didn't work.  Fucking up is not something you try to do, its just something that happens.  Tim felt like he was interrupting people and like it was really good to understand what was going on there.  If you don't want to be interrupted, go into another room with headphones.  Or just listen, if you start to interrupt someone, can you help me with this thing.  I can't imagine you can't be focused on something.  There are studies for people who literally cannot be interrupted because the communication and creativity parts are different.  If you go to a bus station in the 3rd world, its a constant interruption until you find the bus that is where you want to go.  FInally through these interruptions you find the right person who will take you to the right place.  Decide on a plan, decide what works with people and then decide.
+
+
+Feel like I wasn't listened to.  Listening to each other is pretty important and if you don't, we'll just kick the dick out of the program.  Its harder to do an after coding check in than before you go.  Marshall doesn't know if its helpful but if you feel you weren't listened to after the session, bring it up.  Might not sound like it to the people who hear this thing, you are giving sort of a gift to someone.  Telling them they are not listening to you 
+
+Could have worked a little more yesterday.  Good realization to have.
+
+Enough time to have deploy issues
+
+Can I touch a fucking keyboard once?!!!  Sometimes the person in the zone is in touch with themselves.  Have they been typing for ofour hours stragiht?
+
+Sometimes stronger personalities contributions droned out the quieter folk.  Derek doesn't know if there is a solution because some people are quiet aaaaall the time.  Standups?  What if you had a reaction round of ideas or whatever someone was talking about?  If someone had an idea, lets go around the room real fast and ask everyone waht they think?
+
+Big difference in skill level
+
+Felt behind but got help
+
+Too much ping pong on Thursday.
+
+Pencil something arrow to turtle
+
+More time for CSS
+
+
+:)  Good side
+Lots of standups
+
+Vertical slices was excellent.
+
+Asking questions when confused so all members are engaged
+
+Git mother awesome workflow.  Didn't resolve one merge conflict.
+
+Pairing lunch breaks fucking word kiss stupid
+
+Deliberating on what to call pages and a democratic design process.  Time consuming but good
+
+assigning tasks to pairs.
+
+I got better at reading code.
+
+Project helped teach routes.
+
+Everyone was cool with taking breaks
+
+I had the chance to learn
+
+I had the chance to teach.
+
+Keeping a steady pace and staying relaxed.
+
+It worked, sorta.
+
+Good communication and division of labor.
+
+My team communicated really well.
+
+I realized I know git well.
+
+Solid pairing despite frustration with a bug.
+
+Very easy working with each other.
+
+My team was great to work with.
+
+Great team with complementary strengths.
+
+Companies do this because it works because we're all fucking children.
+
+TDD is addictive, we want to make this thing work and turn green.  We're all children still and we all do the same lizard brain shit.
+
+Really relaxed team work flow.
+
+Splitting up by feature.  Database vs mvc tweets database gravatars.  
+
+Dedication and commitment.
+
+Guessing what we think the outcome will be before clicking.
+
+Standups and morning meeting went well and set tone for the day.
+
+Check again with our group in catching everyone up.
+
+Got lots of help when needed.
+
+Git add git commit git co master git pull git co branch git merge master git push origin branch
+
+Good communication but almost too much.
+
+Periodic checkins to assess progress and form a plan.  Drawing out schema/flowcharts diagrams etc.
+
+I left the project understanding routes, active record, heroku and bcrypt.
