@@ -1,0 +1,12 @@
+APIs
+
+Consuming APIs.  Might be useful for passion project and rest of lives.  What an API is?  What's a web API?  Then github API.
+
+API: Application programming interface.  A way to do stuff.  A set of routines, protocols and tools for building software applications.
+expresses a software component in terms of its operations, inputs, ouptuts and underlying types.
+
+Specifies a set of functions or routines that accomplish a specific task.  An interface used to create software.  Something someone gives a developer that helps them do a specific thing.
+
+Examples: Ruby functions, our to do list app, the twitter API, low level: accessing a disk, high level: ActiveRecord, doesn't correspond directly to the interface.  If we spell something wrong it won't work.  The classes we build in Ruby have interfaces.  You are exposing an API if someone wants to expose your methods and functions.  Soemthing that you use with a specific purpose.
+
+Can run at disk usage, low level or even the processor level.  For example, rollercoaster tycoon was all written in low level code.  The idea that a processor itself has an api that you have to use in order to use that processor.
