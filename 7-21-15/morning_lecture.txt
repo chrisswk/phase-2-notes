@@ -36,6 +36,11 @@ describe 'api actions' do
   end
 end
 
+another test for creating something inside the array.
+
+describe "creating something in the array" do
+  
+end
 
 # GET /api/v1/games
 # Will probably return a list of games
@@ -67,3 +72,19 @@ When we're just testing couldn't we just search and say the length should be one
 If you use FactoryGirl it will have a to_hash method so it will do it for you.  Derek just kept going.  We can use the id.
 
 There are two ways to check if things are working: writing tests or use something to retrieve data.
+
+A test for listing all games.  Derek uses the include on tests so since the thing getting returned is an array you can say this thing should be an array.
+
+Can also p out last response.body
+
+Currently has one object in it.
+
+Returns a nice hash.  Which means, from the array point of view, when we do include it checks whether the array exists inside of 
+
+Doesn't care where something exists in the array just as long as it is inside of it somewhere.  
+
+There are a lot of error messages that will tell your client exactly what you are trying to say.  Often a status code that says exactly what you want to say.  not talking to a human who can easily interpret this.  Talking to a machine.
+
+They didn't send back the correct data.  422.  can rescue the error in ruby and send something else back.  Difference between that and a server error message you can 
+
+Be anything changes it to 
