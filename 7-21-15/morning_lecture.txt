@@ -1,0 +1,11 @@
+Building an API
+
+Just using the application we built for sessions yesteday.
+
+Main difference is returning an object, like JSON or CSV.
+
+Connections between different players is a proprietary format and the communications protocol is propriety.
+
+They don't necessarily use something anyone knows about yet.
+
+Writing tests.  
