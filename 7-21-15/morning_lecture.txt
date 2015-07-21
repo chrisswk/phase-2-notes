@@ -12,25 +12,37 @@ Writing tests.
 
 require 'spec_helper'
 
+
+
 describe 'api actions' do
+
+  before do
+    Game.destroy_all
+  end
+
   describe "GET /api/v1/games" do
     it 'responds with a 200 OK status' do
       get '/api/v1/games'
       expect(last_response.status).to eq(200)
     end
-    #given
-    #when
     it 'returns JSON' do
+    #given
+    game = FGame.create("title": "Pacman", "release_year": 1980, "user_id": )
+    #when
       get '/api/v1/games'
     #then
-      expect(JSON.parse(last_response.body))
+      expect(JSON.parse(last_response.body)).to include({title: "Pacman", release_year: 1980, "user_id": })
+    end
   end
 end
 
 
-
+# GET /api/v1/games
+# Will probably return a list of games
+#[{"title": "Donkey Kong", "release_year": 1981, "user_id": }, ...]
 get 'api/v1/games'
-
+  @games = Game.all
+  @games.to_json
 end
 
 In a larger system you'll have something like github, api.github.com, different sub domains which is nicer than keeping it in the route.
@@ -45,3 +57,13 @@ We are supporting something very similar because we're also supporting an API.  
 Important part of building an API is to use the statuses.  If you're always responding with 200 even if everything blows up its not a good test.
 
 So then we build a route.  "Would you normally put different versions into separate controllers?"   Would rather have fewer files than need more files.  Certainly can make an API controller.
+
+So, we built another test.  Database error that we've all seen a million times.  rake db:test:prepare
+
+An octet is the curly braces in a hash.  An octet is a group of 8 bits. Today, octet is synonymous with byte, but byte historically referred to any "native" grouping of bits, and that could mean 4,6,7, or 8 bits.
+
+When we're just testing couldn't we just search and say the length should be one.  you can't because standard rspec and standaard sinatra creates more columns.  What stops you from creating a particular thing and destroying it at the end of your test.
+
+If you use FactoryGirl it will have a to_hash method so it will do it for you.  Derek just kept going.  We can use the id.
+
+There are two ways to check if things are working: writing tests or use something to retrieve data.
