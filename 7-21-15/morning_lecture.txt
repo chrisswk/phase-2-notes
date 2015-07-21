@@ -9,3 +9,39 @@ Connections between different players is a proprietary format and the communicat
 They don't necessarily use something anyone knows about yet.
 
 Writing tests.  
+
+require 'spec_helper'
+
+describe 'api actions' do
+  describe "GET /api/v1/games" do
+    it 'responds with a 200 OK status' do
+      get '/api/v1/games'
+      expect(last_response.status).to eq(200)
+    end
+    #given
+    #when
+    it 'returns JSON' do
+      get '/api/v1/games'
+    #then
+      expect(JSON.parse(last_response.body))
+  end
+end
+
+
+
+get 'api/v1/games'
+
+end
+
+In a larger system you'll have something like github, api.github.com, different sub domains which is nicer than keeping it in the route.
+
+Including an actual version because if versions change we want clients to be able to change.
+
+Think about ActiveRecord changing their API.  Older finder methods, like find_by_username, now deprecated.  isntead, find_by(username:)
+Don't want people to upgrade to the new version and then all of their stuff breaks so instead the deprecated until the next point release.
+
+We are supporting something very similar because we're also supporting an API.  If we didn't test between versions
+
+Important part of building an API is to use the statuses.  If you're always responding with 200 even if everything blows up its not a good test.
+
+So then we build a route.  "Would you normally put different versions into separate controllers?"   Would rather have fewer files than need more files.  Certainly can make an API controller.
